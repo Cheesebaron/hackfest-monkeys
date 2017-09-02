@@ -1,8 +1,10 @@
-﻿using MvvmCross.Core.ViewModels;
+﻿using MvvmCross.Binding.Bindings.Target.Construction;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.iOS.Platform;
 using MvvmCross.iOS.Views.Presenters;
 using MvvmCross.Platform.Platform;
 using UIKit;
+using XamarinStore;
 
 namespace hackday.custombindings.iOS
 {
@@ -27,5 +29,13 @@ namespace hackday.custombindings.iOS
         {
             return new DebugTrace();
         }
+
+        protected override void FillTargetFactories(IMvxTargetBindingFactoryRegistry registry)
+        {
+            base.FillTargetFactories(registry);
+
+            registry.RegisterCustomBindingFactory("CurrentIndex", (JBKenBurnsView arg) => new JBKenBurnsViewCurrentIndexTargetBinding(arg));
+        }
     }
+
 }

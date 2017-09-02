@@ -126,6 +126,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\Custom\JBKenBurnsView.cs" />
+    <Compile Include="CustomBindings\JBKenBurnsViewCurrentIndexTargetBinding.cs" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="Main.storyboard" />
@@ -158,6 +159,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Custom\" />
+    <Folder Include="CustomBindings\" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\monkey1.jpg" />

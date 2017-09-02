@@ -51,8 +51,9 @@ namespace hackday.custombindings.iOS.Views
 
             var set = this.CreateBindingSet<FirstView, FirstViewModel>();
             set.Bind(_currentIndexLabel).To(vm => vm.CurrentIndex);
-			// only one way until Custom Target Binding has been made
-			set.Bind(_jkView).For(v => v.CurrentIndex).To(vm => vm.CurrentIndex);
+
+            // todo: only one way until Custom Target Binding has been made!
+            set.Bind(_jkView).For(v => v.CurrentIndex).To(vm => vm.CurrentIndex);
 
             for (var i = 1; i <= 6; i++)
             {

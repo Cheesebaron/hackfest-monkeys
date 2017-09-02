@@ -1,6 +1,7 @@
 ﻿//  Created by Javier Berlana on 9/23/11.
 //  Copyright (c) 2011, Javier Berlana
 //  Ported to C# by James Clancey, Xamarin
+//  Ported to Xamarin.iOS Unified API by Tomasz Cielecki
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of this 
 //  software and associated documentation files (the "Software"), to deal in the Software 
@@ -41,7 +42,7 @@ namespace XamarinStore
 
 		public JBKenBurnsView()
 		{
-			ImageDuration = 12;
+			ImageDuration = 5;
 			ShouldLoop = true;
 			IsLandscape = true;
 			BackgroundColor = UIColor.Clear;
